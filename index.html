@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./img/cat-icon.ico" type="image/x-icon">
+
+    <title>My resume</title>
+</head>
+<body>
+    <header class="header" style="top: -100px;">
+        <div class="header-rope">
+            <img class="rope-img" src="./img/rope.png" alt="rope" >
+        </div>
+        <div class="header-flex">
+            <div class="header__button">
+                <button class="header__link" value="0" onclick=moveScreen(event)><span class="header__link-text" value="0">Start</span></button>
+            </div>
+            <div class="header__button">
+                <button class="header__link" value="1" onclick=moveScreen(event)><span class="header__link-text" value="1">Skills</span></button>
+            </div>
+            <div class="header__button">
+                <button class="header__link" value="2" onclick=moveScreen(event)><span class="header__link-text" value="2">Projects</span></button>
+            </div>
+            <div class="header__button">
+                <button class="header__link" value="3" onclick=moveScreen(event)><span class="header__link-text" value="3">Contacts</span></button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="first-section fullpage-section">
+            <div class="first-section__content">
+                <div class="first-section__text intersected">
+                    <h2 class="first-text first-text-header">Maxim Huk</h2>
+                    <p class="first-text first-text-paragraph">19 y.o. novice programmer</p>
+                    <p class="first-text first-text-paragraph">Lviv Polytechnic National University</p>
+                </div>
+                <div class="first-section__photo intersected">
+                    <div class="first-section__photo-container">
+                        <img src="./img/resume-photo.jpg" alt="My photo ^_^" class="first-section__photo-item">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-section fullpage-section">
+            <div class="second-section__content">
+                <div class="second-section__text">
+                    <p class="second-section__header intersected">Metrology | Robotics - 3 year of study</p>
+                    <div class="rate-block intersected top">
+                        <p class="rate-block__element rate-text">HTML</p>
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/empty-star.png" alt="star photo">
+                    </div>
+                    <div class="rate-block intersected top">
+                        <p class="rate-block__element rate-text">CSS</p>
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/empty-star.png" alt="star photo">
+                    </div>
+                    <div class="rate-block intersected top">
+                        <p class="rate-block__element rate-text">JavaScript</p>
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/empty-star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/empty-star.png" alt="star photo">
+                    </div>
+                    <div class="rate-block intersected top">
+                        <p class="rate-block__element rate-text">C</p>
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/empty-star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/empty-star.png" alt="star photo">
+                    </div>
+                    <div class="rate-block intersected top">
+                        <p class="rate-block__element rate-text">C++</p>
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/empty-star.png" alt="star photo">
+                        <img class="rate-block__element rate-image" src="./img/empty-star.png" alt="star photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third-section fullpage-section">
+            <div class="third-section__content">
+                <div class="third-section__content-preview intersected">
+                    <img class="third-section__game" src="./img/gamepreview.gif" alt="Game preview" draggable="false">
+                </div>
+                <div class="third-section__content-projects intersected">
+                    <div class="third-section__projects-text">
+                        <h2 class="third-section__header">My recent projects</h2>
+                        <p class="third-section__item"><a class="third-section__item-link" target="_blank" href="https://katarhu.github.io/Sites/">https://katarhu.github.io/Sites/</a></p>
+                        <p class="third-section__item"><a class="third-section__item-link" target="_blank" href="https://katarhu.github.io/passwordgenerator/">https://katarhu.github.io/passwordgenerator/</a></p>
+                        <p class="third-section__item"><a class="third-section__item-link" target="_blank" href="https://katarhu.github.io/MarathonResume/">https://katarhu.github.io/MarathonResume/</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="forth-section fullpage-section">
+            <div class="forth-section__content">
+                <div class="forth-section__content-form">
+                    <form class="form" action="#">
+                        <h2 class="forth-section__header top intersected">Contact me</h2>
+                        <input class="forth-section__input forth-section__input-name top intersected" type="text" name="" id="name" placeholder="Your name">
+                        <input class="forth-section__input forth-section__input-email top intersected" type="text" name="" id="email" placeholder="Your email">
+                        <textarea class="forth-section__input forth-section__input-subject top intersected" maxlength="300" id="subject" placeholder="Enter your subject"></textarea>
+                        <button class="forth-section__button top intersected">Send</button>
+                    </form>
+                </div>
+                <div class="forth-section__links">
+                    <div class="forth-section__links-block">
+                        <div class="forth-section__links-container top intersected">
+                            <div class="forth-section__links-img">
+                                <img class="forth-section__links-item" src="./img/github.png" alt="">
+                            </div>
+                            <p class="forth-section__links-text"><a href="https://github.com/Katarhu">Github</a></p>
+                        </div>
+                        <div class="forth-section__links-container top intersected">
+                            <div class="forth-section__links-img">
+                                <img class="forth-section__links-item" src="./img/email.png" alt="">
+                            </div>
+                            <p class="forth-section__links-text"><a href="mailto:email.email@gmail.com">email.email@gmail.com</a></p>
+                        </div>
+                        <div class="forth-section__links-container top intersected">
+                            <div class="forth-section__links-img">
+                                <img class="forth-section__links-item" src="./img/telephone.png" alt="">
+                            </div>
+                            <p class="forth-section__links-text"><a href="tel:+380380380380">+380380380380</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/fullpage.js"></script>
+    <script src="./js/observe.js"></script>
+</body>
+</html>
